@@ -48,8 +48,8 @@ if st.session_state.username is None:
     st.subheader("เข้าสู่ระบบ / สมัครสมาชิก")
     col1, col2 = st.columns([1, 1])
     with col1:
-        uname = st.text_input("ชื่อผู้ใช้ (username)", placeholder="เช่น panupong99")
-        dname = st.text_input("ชื่อที่แสดง", placeholder="เช่น ปนุพงศ์")
+        uname = st.text_input("ชื่อผู้ใช้ (username)", placeholder="เช่น panupong")
+        dname = st.text_input("ชื่อที่แสดง", placeholder="เช่น Benz")
         weight = st.number_input("น้ำหนัก (kg)", 30, 200, 65)
         pace = st.number_input("เพซเป้าหมาย (นาที/km)", 3.0, 15.0, 7.0, 0.5)
         if st.button("เข้าสู่ระบบ / สร้างโปรไฟล์", type="primary", use_container_width=True):
